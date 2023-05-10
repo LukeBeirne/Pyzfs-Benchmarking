@@ -13,4 +13,11 @@ import libzfs_core
 # as a package to import
 #
 
-print('hello world!')
+
+# Parsing input config file
+parser = argparse.ArgumentParser()
+parser.add_argument('filename', type = str)
+
+args = parser.parse_args()
+
+
